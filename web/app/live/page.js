@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function LiveProducts() {
   const [liveProducts, setLiveProducts] = useState([]);
@@ -64,12 +65,12 @@ export default function LiveProducts() {
         )}
 
         <div className="mt-12 text-center">
-          <a 
+          <Link 
             href="/" 
             className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold rounded-2xl hover:from-blue-700 hover:to-purple-700 transform hover:scale-105 transition-all duration-200 shadow-lg text-lg"
           >
             ← Back to CMS Dashboard
-          </a>
+          </Link>
         </div>
       </div>
     </div>
